@@ -1,54 +1,45 @@
-# Byte-compiled / optimized / object files
-*.pyc
+# Python / uv specific
 __pycache__/
+*.pyc
 *.pyo
 *.pyd
 
-# Distribution / packaging
-*.egg-info/
+# Build artifacts
 build/
 dist/
-wheels/
-*.whl
+*.egg-info/
 
-# Virtual environment
-.venv/
-virtualenv/
-venv/
-ENV/
-env/
-
-# IDE / Editor specific files
+# IDE / Editor specific
 .vscode/
 .idea/
-*.sublime-workspace
-*.sublime-project
+*.iml
+*.ipr
+*.iws
+
+# Virtual environments
+.venv/
+env/
+venv/
+*.env
 
 # Testing / Coverage
-.coverage
-htmlcov/
-*.cover
 .pytest_cache/
+htmlcov/
+.coverage
 
-# OS specific files
+# OS specific
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-
-# Secrets (if any were accidentally committed)
-.env
-*.env
-
 # Temporary files
 *.tmp
-
-# Jupyter Notebook Checkpoints
-.ipynb_checkpoints/
+*.log
 
 # Ruff cache
 .ruff_cache/
 
-# uv cache
-.uv_cache/
+# Other common ignores
+node_modules/
+docker-compose.override.yml
+docker-compose.ci.yml
+.github/workflows/*.yml.lock
