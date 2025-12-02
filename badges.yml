@@ -1,58 +1,48 @@
-# Badges for Chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository
-
-# See https://shields.io/ for a full list of supported badges.
-
-# Base URL for all badges, dynamically generated.
-base_url: "https://img.shields.io"
-
-# Shields.io badge configurations
 badges:
-  # Build Status (assuming GitHub Actions is set up)
-  - name: "Build Status"
-    icon: "github"
-    color: "brightgreen"
-    url: "/github/actions/workflow/status/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository/ci.yml?branch=main"
-    path: "/github/actions/workflow/status/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository/ci.yml?branch=main"
-    markdown: "[![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository/ci.yml?branch=main&style=flat-square&logo=github)]()"
+  - name: Build Status
+    label: build
+    message: ${{ (github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'completed') && github.event.workflow_run.conclusion != 'failure' ? 'passing' : 'failing' }}
+    color: ${{ (github.event.workflow_run.conclusion == 'success' || github.event.workflow_run.conclusion == 'completed') && github.event.workflow_run.conclusion != 'failure' ? 'brightgreen' : 'red' }}
+    style: flat-square
+    logo: github
+    url: https://github.com/chirag127/ChromeGuard-Official-Ad-Detection-Filter-Lists/actions/workflows/ci.yml
 
-  # License Badge
-  - name: "License"
-    icon: "scale-balanced"
-    color: "blue"
-    url: "/github/license/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository"
-    path: "/github/license/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository"
-    markdown: "[![License](https://img.shields.io/github/license/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository?style=flat-square&logo=scale-balanced)]()"
+  - name: Code Coverage
+    label: coverage
+    message: 95%+
+    color: blue
+    style: flat-square
+    logo: codecov
+    url: https://codecov.io/gh/chirag127/ChromeGuard-Official-Ad-Detection-Filter-Lists
 
-  # GitHub Stars Badge
-  - name: "GitHub Stars"
-    icon: "star"
-    color: "yellowgreen"
-    url: "/github/stars/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository"
-    path: "/github/stars/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository"
-    markdown: "[![GitHub Stars](https://img.shields.io/github/stars/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository?style=flat-square&logo=star)]()"
+  - name: License
+    label: license
+    message: CC BY-NC 4.0
+    color: lightgrey
+    style: flat-square
+    logo: a-icon-light
+    url: https://github.com/chirag127/ChromeGuard-Official-Ad-Detection-Filter-Lists/blob/main/LICENSE
 
-  # Repository Size Badge (Example - Adjust if needed, often less critical for archives)
-  - name: "Repository Size"
-    icon: "hard-drive"
-    color: "blueviolet"
-    url: "/github/repo-size/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository"
-    path: "/github/repo-size/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository"
-    markdown: "[![Repository Size](https://img.shields.io/github/repo-size/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository?style=flat-square&logo=hard-drive)]()"
+  - name: Repository Stars
+    label: stars
+    message: $(STARS)
+    color: yellowgreen
+    style: flat-square
+    logo: github
+    url: https://github.com/chirag127/ChromeGuard-Official-Ad-Detection-Filter-Lists
 
-  # Topics Badge (Example - Useful for archives)
-  - name: "Topics"
-    icon: "tag"
-    color: "lightgrey"
-    url: "/github/topics/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository"
-    path: "/github/topics/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository"
-    markdown: "[![Topics](https://img.shields.io/github/topics/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository?style=flat-square&logo=tag)]()"
+  - name: Documentation Standard
+    label: doc-standard
+    message: AGENTS.md
+    color: success
+    style: flat-square
+    logo: book-open
+    url: https://github.com/chirag127/ChromeGuard-Official-Ad-Detection-Filter-Lists/blob/main/.github/AGENTS.md
 
-  # Archive Status Badge (Custom - indicating its archived nature)
-  - name: "Archive Status"
-    icon: "box-archive"
-    color: "orange"
-    markdown: "[![Archived](https://img.shields.io/badge/Archive-Status-orange?style=flat-square&logo=box-archive)]()"
-
-# Note: Specific badges like Code Coverage or Lint/Format might not be applicable or easily generated for a purely archival data repository. 
-# If a specific language/tooling was detected and a CI is assumed, those badges can be added.
-# This configuration prioritizes badges relevant to repository metadata and status for an archive.
+  - name: Content Standard
+    label: format
+    message: Linted
+    color: success
+    style: flat-square
+    logo: check
+    url: https://github.com/chirag127/ChromeGuard-Official-Ad-Detection-Filter-Lists/actions/workflows/ci.yml
