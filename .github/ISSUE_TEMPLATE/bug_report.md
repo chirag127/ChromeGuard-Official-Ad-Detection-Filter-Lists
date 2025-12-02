@@ -1,88 +1,34 @@
 # Bug Report
 
-## Report Details
+## Please provide as much detail as possible.
 
-*   **Repository:** [`Chromium-Ad-Detection-Filter-Archive-Data-Repository`](https://github.com/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository)
-*   **Detected By:** @{{issue_author}}
-*   **Date:** {{creation_date}}
+--- About the Bug ---
 
----
+**Is this a bug in the filter list itself, or in the tool processing it?**
+(e.g., `Filter List`, `Tooling`, `Documentation`, `Other`)
 
-## 🐛 Summary of the Bug
+**What is the expected behavior?**
 
-(Please provide a concise, 1-2 sentence summary of the bug.)
+**What is the actual behavior?**
 
----
+**Steps to reproduce the behavior:**
+1. 
+2. 
+3. 
 
-## 📍 Context
+--- Environment Details ---
 
-(Describe the environment where the bug occurs. Be as specific as possible. If this is a data-related bug, specify the data source, filters, or query that led to the issue.)
+**Filter List Version (if applicable):**
 
-*   **Data Set/Version:** (e.g., `specific_filter_list.txt`, `date_range`)
-*   **Tool/Process:** (e.g., `data_validation_script.py`, `manual_inspection`)
-*   **Environment:** (e.g., `Local Machine`, `CI/CD Pipeline`, `Specific OS`, `Python Version if applicable`)
+**Tooling Version (if applicable):**
+(e.g., Ad Blocker Name and Version, Browser Name and Version)
 
----
+**Operating System:**
+(e.g., Windows 11, macOS Sonoma, Ubuntu 22.04)
 
-## 📝 Detailed Description
+--- Additional Information ---
 
-(Provide a step-by-step description of how to reproduce the bug. Include all relevant details.)
+**Screenshots or Logs (if applicable):**
+(Please include any relevant error messages or console output.)
 
-1.  **Step 1:**
-2.  **Step 2:**
-3.  **Step 3:**
-4.  ...
-
----
-
-## 📈 Expected Behavior
-
-(What did you expect to happen?)
-
----
-
-## ❌ Actual Behavior
-
-(What actually happened?)
-
----
-
-## 💡 Reproduction Example (Optional)
-
-(If possible, provide a minimal example that demonstrates the bug. This could be a small data snippet, a specific command, or a configuration.)
-
-bash
-# Example command or configuration snippet
-
-
----
-
-## 📸 Screenshots/Logs (Optional)
-
-(Attach any relevant screenshots or log files that help illustrate the problem.)
-
----
-
-## ⚙️ System Information (If Applicable)
-
-(Provide system details that might be relevant, especially for data processing or environment-specific issues.)
-
-*   **Operating System:**
-*   **Python Version:** (If applicable)
-*   **Other relevant software/versions:**
-
----
-
-## 🚀 Potential Cause / Fix (Optional)
-
-(If you have any insights into the cause of the bug or ideas for a fix, please share them here.)
-
----
-
-## 🤝 Contributing
-
-To contribute to this project, please see the [`CONTRIBUTING.md`](https://github.com/chirag127/Chromium-Ad-Detection-Filter-Archive-Data-Repository/blob/main/.github/CONTRIBUTING.md) file.
-
-## ⭐ Star This Repo
-
-If you find this project useful, please consider starring it on GitHub!
+**Any other context about the problem:**
